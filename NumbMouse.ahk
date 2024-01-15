@@ -1,3 +1,12 @@
+/*
+    Script Name: Numb Mouse
+    Creator: Tactics
+    Date Created: January 15, 2024
+    Version: 1.0
+    Written in: AutoHotkey v1.1.37.01c with Notepad++
+*/
+
+; Performance lines added.
 #Persistent
 #SingleInstance force
 #MaxHotkeysPerInterval 9900
@@ -14,21 +23,28 @@ setkeydelay, -1
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+
 End::  ; Control+Alt+S hotkey.
 Suspend  ; Toggle suspension on/off.
 return
 
+
 ;#IfWinActive ahk_class ConsoleWindowClass  ; Don't interfere with console windows (e.g., cmd.exe). Remove the first ";" of this line if you want this active.
 NumpadEnter::return  ; Disable the Enter hotkey in these windows.
 #IfWinActive
+
 
 ; The following hotkeys work in any window (as long as the script is running).
 Numpad5::Click  ; Make the Numpad5 key behave as the left mouse button.
 NumpadAdd::Click right  ; Make Numpad + behave as the right mouse button.
 Esc::ExitApp  ; Make the Esc key close the script.
 
+
 ; The following hotkeys work in any window (as long as the script is running).
 Numpad8::MouseMove, 0, -5, 0, R  ; Move the mouse upward.
 Numpad2::MouseMove, 0, 5, 0, R  ; Move the mouse downward.
 Numpad4::MouseMove, -5, 0, 0, R  ; Move the mouse to the left.
 Numpad6::MouseMove, 5, 0, 0, R  ; Move the mouse to the right.
+
+
+;I've added a descriptions to the lines, and space seperated each segment in-case you wanted to customize it to fit your needs!
