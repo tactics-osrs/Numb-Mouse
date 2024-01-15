@@ -1,4 +1,3 @@
-
 ## Numb Mouse
 
 Numb Mouse is a script that allows you to control your mouse using the number pad on your keyboard. It’s designed to improve accessibility and ease of use. It was created to address intermittent connection issues with the mouse, ensuring full control even when the mouse is not functioning properly.
