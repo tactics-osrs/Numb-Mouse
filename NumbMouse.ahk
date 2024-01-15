@@ -2,7 +2,7 @@
     Script Name: Numb Mouse
     Creator: Tactics
     Date Created: January 15, 2024
-    Version: 1.0
+    Version: 1.3
     Written in: AutoHotkey v1.1.37.01c with Notepad++
 */
 
