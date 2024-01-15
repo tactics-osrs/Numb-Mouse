@@ -1,4 +1,4 @@
-Sure, I can help with that. Here's your edited README:
+
 
 ## Numb Mouse
 
