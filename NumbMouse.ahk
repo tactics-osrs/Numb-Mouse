@@ -41,10 +41,40 @@ Esc::ExitApp  ; Make the Esc key close the script.
 
 
 ; The following hotkeys work in any window (as long as the script is running).
-Numpad8::MouseMove, 0, -5, 0, R  ; Move the mouse upward.
-Numpad2::MouseMove, 0, 5, 0, R  ; Move the mouse downward.
-Numpad4::MouseMove, -5, 0, 0, R  ; Move the mouse to the left.
-Numpad6::MouseMove, 5, 0, 0, R  ; Move the mouse to the right.
+Numpad8::
+    if GetKeyState("Numpad4", "P")
+        MouseMove, -5, -5, 0, R  ; Move the mouse diagonally up and to the left.
+    else if GetKeyState("Numpad6", "P")
+        MouseMove, 5, -5, 0, R  ; Move the mouse diagonally up and to the right.
+    else
+        MouseMove, 0, -5, 0, R  ; Move the mouse upward.
+return
 
+Numpad2::
+    if GetKeyState("Numpad4", "P")
+        MouseMove, -5, 5, 0, R  ; Move the mouse diagonally down and to the left.
+    else if GetKeyState("Numpad6", "P")
+        MouseMove, 5, 5, 0, R  ; Move the mouse diagonally down and to the right.
+    else
+        MouseMove, 0, 5, 0, R  ; Move the mouse downward.
+return
+
+Numpad4::
+    if GetKeyState("Numpad8", "P")
+        MouseMove, -5, -5, 0, R  ; Move the mouse diagonally up and to the left.
+    else if GetKeyState("Numpad2", "P")
+        MouseMove, -5, 5, 0, R  ; Move the mouse diagonally down and to the left.
+    else
+        MouseMove, -5, 0, 0, R  ; Move the mouse to the left.
+return
+
+Numpad6::
+    if GetKeyState("Numpad8", "P")
+        MouseMove, 5, -5, 0, R  ; Move the mouse diagonally up and to the right.
+    else if GetKeyState("Numpad2", "P")
+        MouseMove, 5, 5, 0, R  ; Move the mouse diagonally down and to the right.
+    else
+        MouseMove, 5, 0, 0, R  ; Move the mouse to the right.
+return
 
 ;I've added a descriptions to the lines, and space seperated each segment in-case you wanted to customize it to fit your needs!
