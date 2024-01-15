@@ -18,7 +18,7 @@ End::  ; Control+Alt+S hotkey.
 Suspend  ; Toggle suspension on/off.
 return
 
-;#IfWinActive ahk_class ConsoleWindowClass  ; Don't interfere with console windows (e.g., cmd.exe).
+;#IfWinActive ahk_class ConsoleWindowClass  ; Don't interfere with console windows (e.g., cmd.exe). Remove the first ";" of this line if you want this active.
 NumpadEnter::return  ; Disable the Enter hotkey in these windows.
 #IfWinActive
 
