@@ -17,8 +17,8 @@ The script remaps certain keys on your number pad to mouse actions. Here’s wha
 ## Versions
 There are two versions of Numb Mouse:
 
-.ahk version: This version requires AutoHotkey to be installed on your computer. You can download AutoHotkey from its official website. Once installed, you can run the .ahk version of Numb Mouse.
+* .ahk version: This version requires AutoHotkey to be installed on your computer. You can download AutoHotkey from its official website. Once installed, you can run the .ahk version of Numb Mouse.
 
-.exe version: This is a compiled version of the script, which means it can run on its own without the need for any additional software. Simply double-click the .exe file to run Numb Mouse.
+* .exe version: This is a compiled version of the script, which means it can run on its own without the need for any additional software. Simply double-click the .exe file to run Numb Mouse.
 
 Please choose the version that best suits your needs. Enjoy using Numb Mouse!
