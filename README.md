@@ -5,14 +5,14 @@ with my mouse having intermittent connection issues, so that I still have full c
 ## What the Code Does
 The script remaps certain keys on your number pad to mouse actions. Here’s what each key does:
 
-* Numpad5: Acts as the left mouse button.
-* NumpadAdd (+): Acts as the right mouse button.
 * Numpad8: Moves the mouse upward.
 * Numpad2: Moves the mouse downward.
 * Numpad4: Moves the mouse to the left.
 * Numpad6: Moves the mouse to the right.
-* Esc: Closes the script.
+* Numpad5: Acts as the left mouse button.
+* NumpadAdd (+): Acts as the right mouse button.
 *Additionally, the End key toggles the script on and off.
+* Esc: Closes the script.
 
 ## Versions
 There are two versions of Numb Mouse:
